@@ -15,6 +15,9 @@ console.log(dedent`# GitHub API Modules
 
 > a list of ${packages.length} javascript modules for doing http stuff.
 
+Find more datasets like this at 
+[nice-registry/about](https://github.com/nice-registry/about#datasets).
+
 ## How?
 
 This list is created by:

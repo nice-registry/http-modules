@@ -1,7 +1,7 @@
 const registry = require('package-stream')()
 const path = require('path')
 const fs = require('fs')
-const mkdirp = require('mkdirp')
+const mkdirp = require('mkdirp').sync
 const ora = require('ora')
 const spinner = ora().start()
 let count = 0
@@ -13,7 +13,6 @@ registry
       pkg && 
       pkg.name && 
       pkg.description && 
-      !pkg.name.match('@') && 
       (
         pkg.name.toLowerCase().split('-').includes('http') ||
         pkg.description.toLowerCase().split(' ').includes('http')
